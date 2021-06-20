@@ -1,0 +1,6 @@
+export enum DeskType {
+    MAHOGANY = 'MAHOGANY',
+    STEEL = 'STEEL',
+    PLASTIC = 'PLASTIC',
+    EXECUTIVE_LEATHER = 'EXECUTIVE_LEATHER'
+}
