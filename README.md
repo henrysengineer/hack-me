@@ -1,76 +1,37 @@
-# Hack Me
+# Desk booking app
 
-## Delivery
+This is a proof of concept for a desk booking app.
 
-Let's create your branch on top of the main one.
+## Stack
 
-At the end, push all changes and create a pull request.
+This project using NodeJS and NestJS in the backend portion and ReactJS in the client portion.
+The language used is Typescript.
 
-## How to run and test
+## Requirements
 
-This app has been initiated with create-react-app with typescript.
+For this project you need `node` in version 14.
+Make sure `nvm` is available on your PATH.
+This project is optimized for a linux based runtime.
 
-### `yarn start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Go to /backend, do `npm install`.
+Then, go to /client and do `yarn`.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Launch the project
 
-### `yarn test`
+Go to /backend, do `npm start`
+Then, go to /client and do `yarn start`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Do not forget to seed the database using `npm seed` from /backend to have test data**
 
+## Testing
 
-## Exercise
+Currently only the backend has unit testing for controllers and services.
+Go to /backend and do `npm test`.
 
-Let's develop an application (local only) that allow the user to manage desks, employees and assignation day by day.
+## TODO
 
-The app will contain a main menu with 3 items:
-
-- Desks
-- Employees
-- Calendar
-
-The app will be developed in TypeScript and will contain relevant unit test. Other libs may be added.
-
-The delivery is not supposed to be all functional, let's focus on architecture, wording, ...
-
-You'll have to present and justify your decisions during the debrief.
-
-### Desks
-
-The desk page will allow the user to create, view and modify the desk (unique number) list.
-
-
-### Employees
-
-The employee page will allow the user to create, view and modify the employee (name, etc...) list.
-
-An employee may have a preferred ordered desk list.
-
-
-### Calendar
-
-The calendar page will display employee desk assignation for the next following days.
-
-An action will allow the user to assign a specific free desk to an employee for a specific day.
-
-An action will allow the user to remove an assignation.
-
-An action will allow the user to trigger an algorithm that assign automatically desk to employee according to the preferred desk list.
-
-
-### Extension : Zoning
-
-Add zone concept. A zone is a group of desk. Desk could be part of 0 or 1 zone.
-
-The app will allow the user to set zone to desk.
-
-The app will allow the user to set a list of zone and/or desk to his preferred list.
-
-
-
-
+- Add makefile
+- Add CRUD to client
+- Add Calendar + booking to client
